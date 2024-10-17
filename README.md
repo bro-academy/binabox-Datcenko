@@ -1,3 +1,4 @@
+# Binabox - homework project
 # Heading level 1
 
 1. First item
@@ -11,3 +12,7 @@
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
+
+Student: Yevheniia Datsenko
+
+Mentor: Olexander Koshara
