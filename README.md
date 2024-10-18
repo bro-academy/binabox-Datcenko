@@ -1,18 +1,7 @@
 # Binabox - homework project
-# Heading level 1
 
-1. First item
-2. Second item
-3. Third item
-    1. Indented item
-    2. Indented item
-4. Fourth item
+[![Getting started with Git in Visual Studio](https://img.youtube.com/vi/GCZ9x3yqkyc/0.jpg)](https://www.youtube.com/watch?v=GCZ9x3yqkyc)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+Student: [***Yevheniia Datsenko***](https://github.com/Datcenko)
 
-Student: Yevheniia Datsenko
-
-Mentor: Olexander Koshara
+Mentor: [***Olexander Koshara***](https://github.com/alex-koshara)
