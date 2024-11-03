@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="header__content">
-            <strong class="logo">
-                <a href="#">
-                    <img src="img/logo-white.png" width="188" height="44" alt="binabox" >
-                </a>
-            </strong>
+            <h1 class="logo">
+                <img src="img/logo.svg" width="188" height="44" alt="binabox" >
+            </h1>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item active">
@@ -40,7 +42,7 @@
             <div class="tools">
                 <form class="search">
                     <button type="submit" class="search__btn">
-                        <img src="img/Icon.svg" width="24" height="24" alt="search"> search
+                        <img src="img/search.svg" width="24" height="24" alt="search"> search
                         <span class="accessibility">
                             Search
                         </span>
@@ -62,9 +64,9 @@
         <section class="promo">
             <div class="promo__content">
                 <div class="promo__info">
-                    <strong class="promo__title">
+                    <p class="promo__title">
                     WITH <span class="mark">BINABOX</span> EXPLORE NFT collection
-                    </strong>
+                    </p>
                     <p>
                         We are the best way to check the rarity of NFT collection
                     </p>
@@ -84,10 +86,9 @@
         </section>
         <section class="catalog">
             <div class="catalog__box">
-                <h1 class="catalog__title">
-                    <img src="img/folder.svg" width="24" height="24" alt="catalog">
+                <h2 class="catalog__title">
                     Catalog
-                </h1> 
+                </h2> 
                 <div class="catalog__buttons">
                     <a href="#" class="btn">See all</a> 
                     <button class="btn—prev">Prev</button>
@@ -96,7 +97,12 @@
             </div>
             <div class="catalog__list">
                 <article class="catalog__item">
-                    <img src="img/catalog1.jpg" width="240" height="324" alt="skeleton">
+                    <div class="catalog__image">
+                        <img src="img/catalog1.jpg" width="240" height="324" alt="skeleton">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
                     <b class="catalog__price">
                         $199
                     </b>
@@ -105,7 +111,12 @@
                     </strong>
                 </article>
                 <article class="catalog__item">
-                    <img src="img/catalog2.jpg" width="240" height="324" alt="cat">
+                    <div class="catalog__image">
+                        <img src="img/catalog2.jpg" width="240" height="324" alt="cat">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
                     <b class="catalog-item__price">
                         $199
                     </b>
@@ -114,7 +125,12 @@
                     </strong>
                 </article>
                 <article class="catalog__item">
-                    <img src="img/catalog3.jpg" width="240" height="324" alt="scissors">
+                    <div class="catalog__image">
+                        <img src="img/catalog3.jpg" width="240" height="324" alt="scissors">
+                        <span class="catalog__label">
+                            Sold out
+                        </span>
+                    </div>
                     <b class="catalog-item__price">
                         $199
                     </b>
@@ -123,7 +139,12 @@
                     </strong>
                 </article>
                 <article class="catalog__item">
-                    <img src="img/catalog4.jpg" width="240" height="324" alt="cart">
+                    <div class="catalog__image">
+                        <img src="img/catalog4.jpg" width="240" height="324" alt="cart">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
                     <b class="catalog-item__price">
                         $199
                     </b>
@@ -132,7 +153,12 @@
                     </strong>
                 </article>
                 <article class="catalog__item">
-                    <img src="img/catalog5.jpg" width="240" height="324" alt="frame">
+                    <div class="catalog__image">
+                        <img src="img/catalog5.jpg" width="240" height="324" alt="frame">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
                     <b class="catalog__heading">
                         $199
                     </b>
@@ -156,7 +182,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" width="16" height="16" alt="autor" >
+                            <img src="img/user.svg" class="blog-autor__img" width="16" height="16" alt="autor" >
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -164,9 +190,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -183,7 +209,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -191,9 +217,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -210,7 +236,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -218,9 +244,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -237,7 +263,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -245,9 +271,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -264,7 +290,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -272,9 +298,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -291,7 +317,7 @@
                     </div>
                     <div class="blog__info">
                         <span>
-                            <img src="img/user-02.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
                             Tony Nguyen
                         </span>
                         <time datetime="2022-06-20">
@@ -299,9 +325,9 @@
                             20 Jun 2022
                         </time>
                     </div>
-                    <strong class="blog__name">
+                    <h3 class="blog__name">
                         Sonic live
-                    </strong>
+                    </h3>
                     <p>
                         One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
                     </p>
@@ -371,7 +397,7 @@
 
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -422,7 +448,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -473,7 +499,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -524,7 +550,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -575,7 +601,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -626,7 +652,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -677,7 +703,7 @@
                 </ul>
             </div>
             <div class="team__item">
-                <img src="img/Image-Library-teams-portraits.png" width="120" height="120" alt="person">
+                <img src="img/person.png" width="120" height="120" alt="person">
                 <strong class="team__name">
                     Jason Smith
                 </strong>
@@ -734,19 +760,27 @@
             </h2>
             <details>
                 <summary>What are the NFTs?</summary>
-                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+                <p>
+                   Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
             </details>
             <details>
                 <summary>How do I get NFTs?</summary>
-                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
             </details>
             <details>
                 <summary>How can we buy your NFTs?</summary>
-                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
             </details>
             <details>
                 <summary>Who are the team behind the project?</summary>
-                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
             </details>
         </section>
     </main>
@@ -755,7 +789,7 @@
             <div class="footer__content">
                 <strong class="footer__logo">
                     <a href="#">
-                        <img src="img/logo-blue.png" width="188" height="44" alt="binabox" >
+                        <img src="img/logo-blue.svg" width="188" height="44" alt="binabox" >
                     </a>
                 </strong>
                 <p>
@@ -764,9 +798,9 @@
             </div>
             <div class="footer__box">
                 <div class="footer__col">
-                    <strong class="footer__title">
+                    <b class="footer__title">
                         Subscribe
-                    </strong>
+                    </b>
                     <nav class="footer-nav">
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
@@ -793,9 +827,9 @@
                     </nav>
                 </div>
                 <div class="footer__col">
-                    <strong class="footer__title">
+                    <b class="footer__title">
                         Company
-                    </strong>
+                    </b>
                     <nav class="footer-nav">
                         <ul class="footer-nav__list">
                             <li class="footer-nav__item">
