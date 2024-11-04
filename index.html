@@ -2,110 +2,916 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <link rel="stylesheet" href="style.css"> --> <!-- uncomment styles --> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" class="container">
-        <div class="profile-folder">
-          <div class="folder">
-            <div class="title">
-              Yaba Kawaii Studio
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="logo">
+                <img src="img/logo.svg" width="188" height="44" alt="binabox" >
+            </h1>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item active">
+                        <a href="#" class="navigation__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/blog-article.html" class="navigation__link">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/catalog.html" class="navigation__link">
+                            Catalog
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/contact-us.html" class="navigation__link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="tools">
+                <form class="search">
+                    <button type="submit" class="search__btn">
+                        <img src="img/search.svg" width="24" height="24" alt="search"> search
+                        <span class="accessibility">
+                            Search
+                        </span>
+                    </button>
+                    <input type="search" placeholder="Search">
+                </form>
+                <a href="#" class="btn">
+                    <img src="img/discord.svg" width="24" height="24" alt="Discord">
+                    Discord
+                </a>
+                <a href="#" class="btn btn--blue">
+                    <img src="img/wallet.svg" width="24" height="24" alt="Connect">
+                    Connect
+                </a>
             </div>
-
-            <div class="body">
-              <div class="profile-icon-box">
-                <p id="typeText"></p>
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon.png" /> <!-- Photo -->
+        </div>   
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="promo__content">
+                <div class="promo__info">
+                    <p class="promo__title">
+                    WITH <span class="mark">BINABOX</span> EXPLORE NFT collection
+                    </p>
+                    <p>
+                        We are the best way to check the rarity of NFT collection
+                    </p>
+                    <dl class="definition">
+                        <dt class="definition__term">2240+</dt>
+                        <dd class="definition__discription">Total Iteam</dd>
+                        <dt class="definition__term">1000+</dt>
+                        <dd class="definition__discription">Profiles whitelisted</dd>
+                    </dl>
+                    <div class="promo__buttons">
+                        <a href="#" class="btn btn__blue">Connect walet</a>
+                        <a href="#" class="btn">Whitelist now</a>
+                    </div>
                 </div>
-              </div>
-
-              <div class="name">
-                <p>AYAKO YOKOYA</p> <!-- Name -->
-              </div>
-              <div class="aboutme">
-                <p>Creative Developer <span>(I wanna be...)</span></p> <!-- Profession -->
-              </div>
-
-              <div class="sns-btn-box">
-                <p>My sns accounts are...</p>
-                <a
-                  href="https://github.com/ayakoyokoya/"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  github <!-- Link to social media 1 -->
+                <img class="promo__img" src="img/cube.png" width="576" height="576" alt="cube" >
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="catalog__box">
+                <h2 class="catalog__title">
+                    Catalog
+                </h2> 
+                <div class="catalog__buttons">
+                    <a href="#" class="btn">See all</a> 
+                    <button class="btn—prev">Prev</button>
+                    <button class="btn—next">Next</button>
+                </div>
+            </div>
+            <div class="catalog__list">
+                <article class="catalog__item">
+                    <div class="catalog__image">
+                        <img src="img/catalog1.jpg" width="240" height="324" alt="skeleton">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
+                    <b class="catalog__price">
+                        $199
+                    </b>
+                    <strong class="catalog__heading">
+                        Name Product
+                    </strong>
+                </article>
+                <article class="catalog__item">
+                    <div class="catalog__image">
+                        <img src="img/catalog2.jpg" width="240" height="324" alt="cat">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
+                    <b class="catalog-item__price">
+                        $199
+                    </b>
+                    <strong class="catalog__heading">
+                        Name Product
+                    </strong>
+                </article>
+                <article class="catalog__item">
+                    <div class="catalog__image">
+                        <img src="img/catalog3.jpg" width="240" height="324" alt="scissors">
+                        <span class="catalog__label">
+                            Sold out
+                        </span>
+                    </div>
+                    <b class="catalog-item__price">
+                        $199
+                    </b>
+                    <strong class="catalog__heading">
+                        Name Product
+                    </strong>
+                </article>
+                <article class="catalog__item">
+                    <div class="catalog__image">
+                        <img src="img/catalog4.jpg" width="240" height="324" alt="cart">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
+                    <b class="catalog-item__price">
+                        $199
+                    </b>
+                    <strong class="catalog__heading">
+                        Name Product
+                    </strong>
+                </article>
+                <article class="catalog__item">
+                    <div class="catalog__image">
+                        <img src="img/catalog5.jpg" width="240" height="324" alt="frame">
+                        <span class="catalog__label">
+                            New
+                        </span>
+                    </div>
+                    <b class="catalog__heading">
+                        $199
+                    </b>
+                    <strong class="catalog-item__title">
+                        Name Product
+                    </strong>
+                </article>
+            </div>
+        </section>
+        <section class="blog">
+            <h2 class="blog__title">
+                Our blog
+            </h2>
+            <div class="blog__list">
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog1.jpg" width="736" height="640" alt="face">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" width="16" height="16" alt="autor" >
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" width="16" height="16" alt="data" >
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog2.jpg" width="736" height="174" alt="skeleton">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" alt="data" width="16" height="16">
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog3.jpg" width="736" height="174" alt="cat">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" alt="data" width="16" height="16">
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog4.jpg" width="736" height="174" alt="monkey">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" alt="data" width="16" height="16">
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog5.jpg" width="736" height="174" alt="duck">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" alt="data" width="16" height="16">
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+                <article class="blog__item">
+                    <div class="blog__img">
+                        <span class="blog__label">
+                            NFT
+                        </span> 
+                        <img src="img/blog6.jpg" width="736" height="640" alt="frame">
+                    </div>
+                    <div class="blog__info">
+                        <span>
+                            <img src="img/user.svg" class="blog-autor__img" alt="autor"  width="16" height="16">
+                            Tony Nguyen
+                        </span>
+                        <time datetime="2022-06-20">
+                            <img src="img/calendar.svg" class="blog-data" alt="data" width="16" height="16">
+                            20 Jun 2022
+                        </time>
+                    </div>
+                    <h3 class="blog__name">
+                        Sonic live
+                    </h3>
+                    <p>
+                        One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...
+                    </p>
+                    <a href="#" class="btn">
+                        Read more
+                    </a>
+                </article>
+            </div>
+            <div class="align-center">
+                <a href="#" class="btn">
+                    Read more
                 </a>
-                <a
-                  href="https://twitter.com/ayakoyokoya"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  twitter <!-- Link to social media 2 -->
+            </div>
+        </section>
+        <section class="about">
+            <h2 class="about__title">
+                About us
+            </h2>
+            <p class="about__subtitle">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat
+            </p>
+            <ol class="about__list">
+                <li class="about__item">
+                    <h3 class="about__heading">
+                        High quality
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. 
+                    </p>
+                </li>
+                <li class="about__item active">
+                    <h3 class="about__heading">
+                        Big collection
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. 
+                    </p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__heading">
+                        Top Resourse
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. 
+                    </p>
+                </li>
+                <li class="about__item">
+                    <h3 class="about__heading">
+                        Big community
+                    </h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. 
+                    </p>
+                </li>
+            </ol>
+            <div class="align-center">
+                <a href="#" class="btn">
+                    Read more
                 </a>
-              </div>
+            </div>
+        </section>
+        <section class="team">
+            <h2 class="team__title">
+                Our team
+            </h2>
+            <div class="team__list">
 
-              <div class="portfolio-btn-box">
-                <p>
-                  Do you want to see error? <!-- Any text -->
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
                 </p>
-                <div class="portfolio">
-                  <button id="error-btn" class="error-btn">
-                    error?
-                  </button>
-                  <a
-                    href="https://ayakoyokoya.github.io/yaba-kawaii-audio-visualizer/dist/"
-                    target="_blank"
-                    class="portfolio-btn"
-                  >
-                    yes! 
-                  </a>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="team__item">
+                <img src="img/person.png" width="120" height="120" alt="person">
+                <strong class="team__name">
+                    Jason Smith
+                </strong>
+                <p class="team__position">
+                    Co - Founder
+                </p>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/linkedin.svg" width="40" height="40" alt="linkedin">
+                            <span class="accessibility">
+                                linkedin
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/instagram.svg" width="40" height="40" alt="instagram">
+                            <span class="accessibility">
+                                instagram
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq">
+            <h2 class="faq__title">
+                FAQs
+            </h2>
+            <details>
+                <summary>What are the NFTs?</summary>
+                <p>
+                   Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
+            </details>
+            <details>
+                <summary>How do I get NFTs?</summary>
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
+            </details>
+            <details>
+                <summary>How can we buy your NFTs?</summary>
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
+            </details>
+            <details>
+                <summary>Who are the team behind the project?</summary>
+                <p>
+                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus. 
+                </p>
+            </details>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__content">
+                <strong class="footer__logo">
+                    <a href="#">
+                        <img src="img/logo-blue.svg" width="188" height="44" alt="binabox" >
+                    </a>
+                </strong>
+                <p>
+                    We are the best way to check the rarity of NFT collection.
+                </p>
+            </div>
+            <div class="footer__box">
+                <div class="footer__col">
+                    <b class="footer__title">
+                        Subscribe
+                    </b>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Catalog
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <template id="template">
-        <div class="error">
-          <div class="folder folder_error">
-            <div class="title">
-              Error
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
-            </div>
-
-            <div class="body">
-              <div class="profile-icon-box">
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon2.png" />
+                <div class="footer__col">
+                    <b class="footer__title">
+                        Company
+                    </b>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Terms Canditions
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">
+                                    Whitepaper
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="" class="footer-nav__link">
+                                    Help Center
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-              </div>
-
-              <div class="name">
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <button class="ok-error-btn" onclick="window.location.reload();">OK...</button>
-              </div>
             </div>
-          </div>
+        </div>   
+        <div class="footer-block">
+            <small>
+                BINABOX 2022 - ALL rights reserved
+            </small>
+            <ul class="social-networks">
+                <li>
+                    <a href="#">
+                        <img src="img/twitter.svg" width="40" height="40" alt="twitter">
+                        <span class="accessibility">
+                            twitter
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/facebook.svg" width="40" height="40" alt="facebook">
+                        <span class="accessibility">
+                            facebook
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/telegram.svg" width="40" height="40" alt="telegram">
+                        <span class="accessibility">
+                            telegram
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/youtube.svg" width="40" height="40" alt="youtube">
+                        <span class="accessibility">
+                            youtube
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/tik-tok.svg" width="40" height="40" alt="tiktok">
+                        <span class="accessibility">
+                            tiktok
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/discord.svg" width="40" height="40" alt="discord">
+                        <span class="accessibility">
+                            discord
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </div>
-      </template>
-      <!-- <script src="script.js"></script> --> <!-- uncomment script --> 
+    </footer>    
 </body>
-</html>
+</html> 
