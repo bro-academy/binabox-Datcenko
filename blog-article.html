@@ -11,28 +11,28 @@
 <body>
     <header class="header">
         <div class="header__content">
-            <a href="index.html" class="logo">
+            <h1 class="logo">
                 <img src="img/logo.svg" width="188" height="44" alt="binabox" >
-            </a>
+            </h1>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item active">
-                        <a href="index.html" class="navigation__link">
+                        <a href="#" class="navigation__link">
                             Home
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="blog-article.html" class="navigation__link">
+                        <a href="/blog-article.html" class="navigation__link">
                             Blog
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="catalog.html" class="navigation__link">
+                        <a href="/catalog.html" class="navigation__link">
                             Catalog
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="contact-us.html" class="navigation__link">
+                        <a href="/contact-us.html" class="navigation__link">
                             Contact us
                         </a>
                     </li>
@@ -41,19 +41,25 @@
             <div class="tools">
                 <form class="search">
                     <button type="submit" class="search__btn">
-                        <img src="img/search.svg" width="24" height="24" alt="search"> search
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                         <span class="accessibility">
                             Search
                         </span>
                     </button>
-                    <input type="search" placeholder="Search">
+                    <input type="search" class="search__input" placeholder="Search">
                 </form>
-                <a href="#" class="btn">
-                    <img src="img/discord.svg" width="24" height="24" alt="Discord">
+                <a href="#" class="btn btn--icon-left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.2752 6.02667C18.7615 4.74667 16.945 4.10667 15.0275 4L14.7248 4.32C16.4404 4.74667 17.9541 5.6 19.367 6.77333C17.6514 5.81333 15.7339 5.17333 13.7156 4.96C13.1101 4.85333 12.6055 4.85333 12 4.85333C11.3945 4.85333 10.8899 4.85333 10.2844 4.96C8.26606 5.17333 6.34862 5.81333 4.63303 6.77333C6.04587 5.6 7.55963 4.74667 9.27523 4.32L8.97248 4C7.05505 4.10667 5.23853 4.74667 3.72477 6.02667C2.00917 9.44 1.10092 13.28 1 17.2267C2.51376 18.9333 4.63303 20 6.85321 20C6.85321 20 7.55963 19.1467 8.06422 18.4C6.75229 18.08 5.54128 17.3333 4.73395 16.16C5.44037 16.5867 6.14679 17.0133 6.85321 17.3333C7.76147 17.76 8.66972 17.9733 9.57798 18.1867C10.3853 18.2933 11.1927 18.4 12 18.4C12.8073 18.4 13.6147 18.2933 14.422 18.1867C15.3303 17.9733 16.2385 17.76 17.1468 17.3333C17.8532 17.0133 18.5596 16.5867 19.2661 16.16C18.4587 17.3333 17.2477 18.08 15.9358 18.4C16.4404 19.1467 17.1468 20 17.1468 20C19.367 20 21.4862 18.9333 23 17.2267C22.8991 13.28 21.9908 9.44 20.2752 6.02667ZM8.66972 15.3067C7.66055 15.3067 6.75229 14.3467 6.75229 13.1733C6.75229 12 7.66055 11.04 8.66972 11.04C9.6789 11.04 10.5872 12 10.5872 13.1733C10.5872 14.3467 9.6789 15.3067 8.66972 15.3067ZM15.3303 15.3067C14.3211 15.3067 13.4128 14.3467 13.4128 13.1733C13.4128 12 14.3211 11.04 15.3303 11.04C16.3394 11.04 17.2477 12 17.2477 13.1733C17.2477 14.3467 16.3394 15.3067 15.3303 15.3067Z" fill="#F5F8FB"/>
+                    </svg>
                     Discord
                 </a>
-                <a href="#" class="btn btn--blue">
-                    <img src="img/wallet.svg" width="24" height="24" alt="Connect">
+                <a href="#" class="btn btn--primary btn--icon-left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5 14H16.51M3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V9C21 7.89543 20.1046 7 19 7L5 7C3.89543 7 3 6.10457 3 5ZM3 5C3 3.89543 3.89543 3 5 3H17M17 14C17 14.2761 16.7761 14.5 16.5 14.5C16.2239 14.5 16 14.2761 16 14C16 13.7239 16.2239 13.5 16.5 13.5C16.7761 13.5 17 13.7239 17 14Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                     Connect
                 </a>
             </div>
@@ -61,29 +67,31 @@
     </header>
     <main class="main">
         <div class="intro">
-            <h1 class="intro__title">
-                Our blog
-            </h1>
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Our blog
-                    </a>
-                </li>
-                <li>
-                    The Basilisks NFT
-                </li>
-            </ul>
+            <div class="intro__content">
+                <h1 class="page__title">
+                    Our blog
+                </h1>
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Our blog
+                        </a>
+                    </li>
+                    <li>
+                        The Basilisks NFT
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="wrapper">
             <aside class="sidebar">
                 <div class="sidebar-box">
-                    <strong class="sidebar-title">
+                    <strong class="sidebar__title">
                         Categories
                     </strong>
                     <nav class="sidebar__nav">
@@ -148,7 +156,7 @@
                     </nav>
                 </div>
                 <div class="sidebar-box">
-                    <strong class="sidebar-title">
+                    <strong class="sidebar__title">
                         Tag
                     </strong>
                     <ul class="tags">
@@ -185,269 +193,278 @@
                     </ul>
                 </div>
             </aside> 
-            <div class="content">
-                <article class="post">
-                    <figure>
-                        <img src="img/blog-main-1.jpg" width="920" height="557" alt="dragon">
-                        <figcaption>Photo caption</figcaption>
-                    </figure>
-                    <h2 class="content__title">
-                        The Basilisks NFT
-                    </h2>
-                    <a href="#" class="btn btn--blue">
+            <article class="post">
+                <figure>
+                    <img src="img/dragon.jpg" width="920" height="557" alt="dragon">
+                    <figcaption>Photo caption</figcaption>
+                </figure>
+                <h2 class="content__title">
+                    The Basilisks NFT
+                </h2>
+                <div class="post__btn">
+                    <a href="#" class="btn btn--primary">
                         Gaming
                     </a>
-                    <div class="blog__info">
-                        <span class="blog__autor">
-                            <img src="img/user.svg" class="blog-autor__img" width="16" height="16" alt="autor" >
-                            Tony Nguyen
-                        </span>
-                        <time datetime="2022-06-20">
-                            <img src="img/calendar.svg" class="blog-data" width="16" height="16" alt="data" >
-                            20 Jun 2022
-                        </time>
-                    </div>
-                    <p>
-                        The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the <a href="#" class="content__text">Basilisks they have</a> gathered to battle other players to win ether (ETH).
-                        In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
-                    </p>
-                    <ul>
-                        <li>
-                            The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).
+                </div>
+                <div class="blog__info">
+                    <span class="blog__autor">
+                        Tony Nguyen
+                    </span>
+                    <time datetime="2022-06-20">
+                        20 Jun 2022
+                    </time>
+                </div>
+                <p>
+                    The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the <a href="#">Basilisks they have</a> gathered to battle other players to win ether (ETH).
+                    In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
+                </p>
+                <ul>
+                    <li>
+                        The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).
 
-                        </li>
-                        <li>
-                            In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing <a href="#" class="content__text">game developed</a>  on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
-                        </li>
-                    </ul>
-                    <ul class="pointer-list">
-                        <li>
-                            List name 1
-                        </li>
-                        <li>
-                            List name 2
-                        </li>
-                        <li>
-                            List name 3
-                        </li>
-                        <li>
-                            List name 4
-                        </li>
-                    </ul>
-                    <div class="blockquote">
-                        <blockquote>
-                            The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers
-                        </blockquote>
-                        <cite>
-                            <span>8,5</span>/
-                            <span>10</span>
-                            Markout Corporation
-                        </cite>
+                    </li>
+                    <li>
+                        In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing <a href="#">game developed</a>  on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
+                    </li>
+                </ul>
+                <ul class="pointer-list">
+                    <li>
+                        List name 1
+                    </li>
+                    <li>
+                        List name 2
+                    </li>
+                    <li>
+                        List name 3
+                    </li>
+                    <li>
+                        List name 4
+                    </li>
+                </ul>
+                <div class="blockquote">
+                    <blockquote>
+                        "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers"
+                    </blockquote>
+                    <cite class="cite">
+                        <span>8,5 / 10</span>
+                        Markout Corporation
+                    </cite>
+                </div>
+                <div class="post__img">
+                    <figure>
+                        <img src="img/face-dragon.jpg" width="448" height="390" alt="dragon-face">
+                        <figcaption>Photo caption</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/big-dragon.jpg" width="448" height="390" alt="dragon-big">
+                        <figcaption>Photo caption</figcaption>
+                    </figure>
+                </div>
+                <h3 class="post__title">NFTs are digital assets that represent real-world objects</h3>
+                <p>
+                    Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.
+                </p>
+                <p>
+                    Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.
+                </p>
+                <h3 class="post__title">
+                    NFT Avatar Generators
+                </h3>
+                <p>
+                    You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.
+                </p>
+                <footer class="article-footer">
+                    <div class="article-footer__col">
+                        <strong class="article-footer__title">
+                            Tags:
+                        </strong>
+                        <ul class="tags">
+                            <li class="tags__item">
+                                NFT
+                            </li>
+                            <li class="tags__item">
+                                ICO
+                            </li>
+                            <li class="tags__item">
+                                Crypto
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <figure>
-                            <img src="img/dragon2.jpg" width="448" height="390" alt="dragon-face">
-                            <figcaption>Photo caption</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/dragon3.jpg" width="448" height="390" alt="dragon-big">
-                            <figcaption>Photo caption</figcaption>
-                        </figure>
-                    </div>
-                    <h3>NFTs are digital assets that represent real-world objects</h3>
-                    <p>
-                        Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.
-                    </p>
-                    <p>
-                        Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.
-                    </p>
-                    <h3>
-                        NFT Avatar Generators
-                    </h3>
-                    <p>
-                        You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.
-                    </p>
-                    <footer class="footer-main">
-                        <div class="footer-main__block">
-                            <strong class="footer-main__title">
-                                Tags:
-                            </strong>
-                            <ul class="tag">
-                                <li class="tag__item">
-                                    NFT
-                                </li>
-                                <li class="tag__item">
-                                    ICO
-                                </li>
-                                <li class="tag__item">
-                                    Crypto
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-main__block">
-                            <strong class="footer-main__title">
-                                Share:
-                            </strong>
-                            <ul class="social-networks  social-networks--alt">
-                                <li>
-                                    <a href="#">
-                                        <img src="img/twitter.svg" width="40" height="40" alt="twitter">
-                                        <span class="accessibility">
-                                            twitter
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="img/facebook.svg" width="40" height="40" alt="facebook">
-                                        <span class="accessibility">
-                                            facebook
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="img/instagram.svg" width="40" height="40" alt="instagram">
-                                        <span class="accessibility">
-                                            instagram
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>   
-                    </footer>
-                </article>
-            </div>
+                    <div class="article-footer__col">
+                        <strong class="article-footer__title">
+                            Share:
+                        </strong>
+                        <ul class="social-networks social-networks--alt">
+                            <li>
+                                <a href="#">
+                                    <img src="img/twitter.svg" width="16" height="16" alt="twitter">
+                                    <span class="accessibility">
+                                        twitter
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/facebook.svg" width="16" height="16" alt="facebook">
+                                    <span class="accessibility">
+                                        facebook
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/instagram.svg" width="16" height="16" alt="instagram">
+                                    <span class="accessibility">
+                                        instagram
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>   
+                </footer>
+            </article>
         </div>
     </main> 
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__content">
-                <strong class="footer__logo">
-                    <a href="#">
-                        <img src="img/logo-blue.svg" width="188" height="44" alt="binabox">
+            <div class="footer__top">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="img/logo-blue.svg" width="188" height="44" alt="binabox" >
                     </a>
-                </strong>
-                <p>
-                    We are the best way to check the rarity of NFT collection.
-                </p>
-            </div>
-            <div class="footer__box">
-                <div class="footer__col">
-                    <strong class="footer__title">
-                        Subscribe
-                    </strong>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Blog
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Catalog
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link">
-                                    Contact us
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <p>
+                        We are the best way to check the rarity of NFT collection.
+                    </p>
                 </div>
-                <div class="footer__col">
-                    <strong class="footer__title">
-                        Company
-                    </strong>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Terms Canditions
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="#" class="footer-nav__link">
-                                    Whitepaper
-                                </a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="" class="footer-nav__link">
-                                    Help Center
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="footer__box">
+                    <div class="footer__col">
+                        <b class="footer__title">
+                            Subscribe
+                        </b>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Catalog
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="" class="footer-nav__link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__col">
+                        <b class="footer__title">
+                            Company
+                        </b>
+                        <nav class="footer-nav">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Terms Canditions
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">
+                                        Whitepaper
+                                    </a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="" class="footer-nav__link">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+            </div>   
+            <div class="footer-bottom">
+                <small>
+                    BINABOX 2022 - ALL rights reserved
+                </small>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.8106 14.1801C28.6677 13.6439 29.309 12.7996 29.6148 11.8049C28.8094 12.3049 27.9283 12.6572 27.0094 12.8464C25.7355 11.4362 23.717 11.093 22.082 12.0086C20.4469 12.9242 19.6 14.8719 20.0145 16.7633C16.7155 16.59 13.6419 14.9594 11.5586 12.2771C10.4714 14.2395 11.027 16.7481 12.8283 18.01C12.1769 17.9881 11.54 17.8035 10.9706 17.4717C10.9706 17.4897 10.9706 17.5077 10.9706 17.5257C10.971 19.5699 12.3478 21.3307 14.2625 21.7358C13.6583 21.9079 13.0245 21.9332 12.4095 21.8099C12.948 23.558 14.4877 24.7556 16.2426 24.7914C14.7892 25.9851 12.9942 26.6325 11.1465 26.6293C10.819 26.6298 10.4918 26.6101 10.1665 26.5703C12.0428 27.8319 14.2265 28.5016 16.4568 28.4992C19.5596 28.5215 22.5415 27.2415 24.7355 24.9455C26.9295 22.6494 28.1525 19.529 28.1309 16.2821C28.1309 16.096 28.1268 15.9109 28.1185 15.7268C28.9221 15.1191 29.6156 14.3663 30.1665 13.5037C29.4179 13.851 28.6238 14.0789 27.8106 14.1801Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.1678 20.0612C10.169 25.0108 13.7462 29.2253 18.6048 30.001V22.9689H16.0678V20.0612H18.6078V17.8476C18.4943 16.7987 18.8504 15.7534 19.5795 14.9951C20.3086 14.2368 21.3352 13.8441 22.3808 13.9236C23.1314 13.9358 23.88 14.0031 24.6208 14.1248V16.599H23.3568C22.9217 16.5416 22.4842 16.6862 22.1676 16.992C21.851 17.2979 21.6896 17.7318 21.7288 18.1716V20.0612H24.4998L24.0568 22.97H21.7288V30.001C26.9833 29.1655 30.6679 24.3371 30.1134 19.0138C29.5588 13.6905 24.9591 9.73591 19.6467 10.0149C14.3342 10.2938 10.1687 14.7087 10.1678 20.0612Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.7134 10.4227C31.304 10.1145 30.661 10.0704 29.9962 10.3074H29.9951C29.2958 10.5565 10.202 17.8277 9.42471 18.1247C9.28333 18.1684 8.04862 18.5774 8.1758 19.4885C8.28934 20.3099 9.28169 20.6501 9.40287 20.6893L14.2571 22.165C14.5792 23.1168 15.7664 26.6283 16.029 27.3785C16.1927 27.8462 16.4596 28.4607 16.9274 28.5871C17.3379 28.7277 17.7462 28.5993 18.0104 28.4151L20.9782 25.9712L25.7691 29.2884L25.8832 29.349C26.2085 29.4769 26.5202 29.5409 26.8177 29.5409C27.0475 29.5409 27.268 29.5026 27.4787 29.426C28.1965 29.1643 28.4836 28.5571 28.5136 28.4883L32.0922 11.974C32.3106 11.092 32.0071 10.6432 31.7134 10.4227ZM18.5382 22.7553L16.9007 26.6322L15.2631 21.786L27.8177 13.5475L18.5382 22.7553Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                telegram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.2522 13.9219C31.0311 12.7535 29.9775 11.9027 28.7548 11.6371C26.9252 11.2656 23.539 11 19.8753 11C16.2138 11 12.7735 11.2656 10.9416 11.6371C9.72115 11.9027 8.66541 12.6996 8.44429 13.9219C8.221 15.25 7.99988 17.1094 7.99988 19.5C7.99988 21.8906 8.221 23.75 8.49848 25.0781C8.72177 26.2465 9.77534 27.0973 10.9958 27.3629C12.9382 27.7344 16.268 28 19.9317 28C23.5954 28 26.9252 27.7344 28.8676 27.3629C30.088 27.0973 31.1416 26.3004 31.3649 25.0781C31.586 23.75 31.8635 21.8367 31.9199 19.5C31.8071 17.1094 31.5297 15.25 31.2522 13.9219ZM16.8794 23.2188V15.7812L23.6496 19.5L16.8794 23.2188Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                youtube
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.033 10.769H12.9671C11.7552 10.769 10.7693 11.755 10.7693 12.9668V27.0328C10.7693 28.2446 11.7552 29.2306 12.9671 29.2306H27.033C28.2449 29.2306 29.2308 28.2446 29.2308 27.0328V12.9668C29.2308 11.755 28.2449 10.769 27.033 10.769ZM25.2774 18.8231C25.1776 18.8323 25.0765 18.8385 24.9741 18.8385C23.8212 18.8385 22.808 18.2455 22.2185 17.3493C22.2185 19.7005 22.2185 22.3756 22.2185 22.4205C22.2185 24.4904 20.5403 26.1686 18.4704 26.1686C16.4005 26.1686 14.7223 24.4904 14.7223 22.4205C14.7223 20.3506 16.4005 18.6723 18.4704 18.6723C18.5486 18.6723 18.6251 18.6794 18.702 18.6842V20.5312C18.6251 20.522 18.5495 20.5079 18.4704 20.5079C17.4137 20.5079 16.5574 21.3642 16.5574 22.4209C16.5574 23.4776 17.4137 24.3339 18.4704 24.3339C19.5271 24.3339 20.4603 23.5014 20.4603 22.4446C20.4603 22.4029 20.4787 13.8319 20.4787 13.8319H22.244C22.4102 15.4104 23.6845 16.6561 25.2774 16.7704V18.8231Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                tiktok
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.9511 13.7743C26.0474 12.267 23.0358 12.0115 22.9069 12.0023C22.707 11.9858 22.5165 12.0961 22.4343 12.278C22.4268 12.2891 22.3614 12.438 22.2886 12.6696C23.5477 12.8791 25.0946 13.3001 26.4939 14.1548C26.7181 14.2908 26.7872 14.5813 26.6489 14.8019C26.5574 14.9471 26.4023 15.0261 26.2417 15.0261C26.1557 15.0261 26.0679 15.0022 25.9895 14.9544C23.5832 13.4857 20.5791 13.4122 20 13.4122C19.4209 13.4122 16.4149 13.4857 14.0105 14.9544C13.7863 15.0923 13.4912 15.0243 13.3529 14.8037C13.2128 14.5813 13.2819 14.2927 13.5061 14.1548C14.9054 13.3019 16.4523 12.8791 17.7114 12.6714C17.6386 12.438 17.5732 12.2909 17.5676 12.278C17.4835 12.0961 17.2948 11.9821 17.0931 12.0023C16.9642 12.0115 13.9526 12.267 12.0228 13.7945C11.0158 14.7118 9 20.0719 9 24.706C9 24.7887 9.02242 24.8677 9.06352 24.9394C10.4535 27.3438 14.2478 27.9724 15.1128 28C15.1165 28 15.1221 28 15.1277 28C15.2809 28 15.4248 27.9283 15.5144 27.807L16.3888 26.6232C14.0292 26.024 12.8242 25.0056 12.7551 24.9449C12.5571 24.774 12.5384 24.4762 12.714 24.2814C12.8877 24.0865 13.1904 24.0681 13.3884 24.2391C13.4164 24.2648 15.6359 26.1177 20 26.1177C24.3716 26.1177 26.591 24.2575 26.6135 24.2391C26.8115 24.07 27.1123 24.0865 27.2879 24.2832C27.4616 24.478 27.4429 24.774 27.2449 24.9449C27.1758 25.0056 25.9708 26.024 23.6112 26.6232L24.4856 27.807C24.5752 27.9283 24.7191 28 24.8723 28C24.8779 28 24.8835 28 24.8872 28C25.7522 27.9724 29.5465 27.3438 30.9365 24.9394C30.9776 24.8677 31 24.7887 31 24.706C31 20.0719 28.9842 14.7118 27.9511 13.7743ZM16.8913 22.8237C15.9665 22.8237 15.2174 21.9818 15.2174 20.9414C15.2174 19.901 15.9665 19.0591 16.8913 19.0591C17.8161 19.0591 18.5652 19.901 18.5652 20.9414C18.5652 21.9818 17.8161 22.8237 16.8913 22.8237ZM23.1087 22.8237C22.1839 22.8237 21.4348 21.9818 21.4348 20.9414C21.4348 19.901 22.1839 19.0591 23.1087 19.0591C24.0335 19.0591 24.7826 19.901 24.7826 20.9414C24.7826 21.9818 24.0335 22.8237 23.1087 22.8237Z" fill="#F5F8FB"/>
+                            </svg>
+                            <span class="accessibility">
+                                discord
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>   
-        <div class="footer-block">
-            <small>
-                BINABOX 2022 - ALL rights reserved
-            </small>
-            <ul class="social-networks">
-                <li>
-                    <a href="#">
-                        <img src="img/twitter.svg" width="40" height="40" alt="twitter">
-                        <span class="accessibility">
-                            twitter
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/facebook.svg" width="40" height="40" alt="facebook">
-                        <span class="accessibility">
-                            facebook
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/telegram.svg" width="40" height="40" alt="telegram">
-                        <span class="accessibility">
-                            telegram
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/youtube.svg" width="40" height="40" alt="youtube">
-                        <span class="accessibility">
-                            youtube
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/tik-tok.svg" width="40" height="40" alt="tiktok">
-                        <span class="accessibility">
-                            tiktok
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/discord.svg" width="40" height="40" alt="discord">
-                        <span class="accessibility">
-                            discord
-                        </span>
-                    </a>
-                </li>
-            </ul>
         </div>
-    </footer> 
+    </footer>  
 </body>
 </html>
