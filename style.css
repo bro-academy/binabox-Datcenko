@@ -909,7 +909,7 @@ figcaption {
 .post a:hover {
     opacity: 0.8;
 }
-ul.pointer-list {
+ul .pointer-list {
     padding: 0;
     list-style: none;
 }
