@@ -30,12 +30,12 @@
                         </a>
                     </li>
                     <li class="navigation__item active">
-                        <a href="/catalog.html" class="navigation__link">
+                        <a href="#" class="navigation__link">
                             Catalog
                         </a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">
+                        <a href="contacts.html" class="navigation__link">
                             Contact us
                         </a>
                     </li>
@@ -43,7 +43,7 @@
             </nav>
             <div class="tools">
                 <form class="search">
-                    <button type="submit" class="search__btn">
+                    <button type="submit" method="post" class="search__btn">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -54,13 +54,13 @@
                     <input type="search" class="search__input" placeholder="Search">
                 </form>
                 <a href="#" class="btn btn--icon-left">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.2752 6.02667C18.7615 4.74667 16.945 4.10667 15.0275 4L14.7248 4.32C16.4404 4.74667 17.9541 5.6 19.367 6.77333C17.6514 5.81333 15.7339 5.17333 13.7156 4.96C13.1101 4.85333 12.6055 4.85333 12 4.85333C11.3945 4.85333 10.8899 4.85333 10.2844 4.96C8.26606 5.17333 6.34862 5.81333 4.63303 6.77333C6.04587 5.6 7.55963 4.74667 9.27523 4.32L8.97248 4C7.05505 4.10667 5.23853 4.74667 3.72477 6.02667C2.00917 9.44 1.10092 13.28 1 17.2267C2.51376 18.9333 4.63303 20 6.85321 20C6.85321 20 7.55963 19.1467 8.06422 18.4C6.75229 18.08 5.54128 17.3333 4.73395 16.16C5.44037 16.5867 6.14679 17.0133 6.85321 17.3333C7.76147 17.76 8.66972 17.9733 9.57798 18.1867C10.3853 18.2933 11.1927 18.4 12 18.4C12.8073 18.4 13.6147 18.2933 14.422 18.1867C15.3303 17.9733 16.2385 17.76 17.1468 17.3333C17.8532 17.0133 18.5596 16.5867 19.2661 16.16C18.4587 17.3333 17.2477 18.08 15.9358 18.4C16.4404 19.1467 17.1468 20 17.1468 20C19.367 20 21.4862 18.9333 23 17.2267C22.8991 13.28 21.9908 9.44 20.2752 6.02667ZM8.66972 15.3067C7.66055 15.3067 6.75229 14.3467 6.75229 13.1733C6.75229 12 7.66055 11.04 8.66972 11.04C9.6789 11.04 10.5872 12 10.5872 13.1733C10.5872 14.3467 9.6789 15.3067 8.66972 15.3067ZM15.3303 15.3067C14.3211 15.3067 13.4128 14.3467 13.4128 13.1733C13.4128 12 14.3211 11.04 15.3303 11.04C16.3394 11.04 17.2477 12 17.2477 13.1733C17.2477 14.3467 16.3394 15.3067 15.3303 15.3067Z" fill="#F5F8FB"/>
                     </svg>
                     Discord
                 </a>
                 <a href="#" class="btn btn--primary btn--icon-left">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.5 14H16.51M3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V9C21 7.89543 20.1046 7 19 7L5 7C3.89543 7 3 6.10457 3 5ZM3 5C3 3.89543 3.89543 3 5 3H17M17 14C17 14.2761 16.7761 14.5 16.5 14.5C16.2239 14.5 16 14.2761 16 14C16 13.7239 16.2239 13.5 16.5 13.5C16.7761 13.5 17 13.7239 17 14Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     Connect
@@ -68,7 +68,7 @@
             </div>
         </div>   
     </header>
-    <main class="main-contacts">
+    <main>
         <div class="intro">
             <div class="intro__content">
                 <h1 class="page__title">
@@ -86,245 +86,280 @@
                 </ul>
             </div>
         </div>
-        <div class="wrapper-catalog">
-            <aside class="sidebar-catalog">
-                <form action="#" method="post" class="form-catalog">
-                    <details class="form-catalog__box" open>
+        <div class="wrapper">
+            <aside class="sidebar">
+                <form action="#" method="post" class="filter-form">
+                    <details class="filter-box" open>
                         <summary>Clothing</summary>
-                        <div class="form-catalog__info">
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
-                                    </span>
-                                    <span class="form-checkbox__text">
-                                        Combatant  
-                                    </span>
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
-                                    </span>
-                                    <span class="form-checkbox__text">
-                                        Ninja  
-                                    </span>
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
-                                    </span>
-                                    <span class="form-checkbox__text">
-                                        King  
-                                    </span>
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
-                                    </span>
-                                    <span class="form-checkbox__text">
-                                        Queen  
-                                    </span>
-                                </p>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
-                                    </span>
-                                    <span class="form-checkbox__text">
-                                        Robot  
-                                    </span>
-                                </p>
-                            </label>
+                        <div class="filter-box__info">
+                            <div>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" name="" class="input-hidden form-checkbox__input" name="clothing" value="combatant">
+                                    <p class="form-checkbox__inner">  
+                                        <span class="form-checkbox__box">
+                                        </span>
+                                        <span class="form-checkbox__text">
+                                            Combatant  
+                                        </span>
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="ninja">
+                                    <p class="form-checkbox__inner">  
+                                        <span class="form-checkbox__box">
+                                        </span>
+                                        <span class="form-checkbox__text">
+                                            Ninja  
+                                        </span>
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="king">
+                                    <p class="form-checkbox__inner">  
+                                        <span class="form-checkbox__box">
+                                        </span>
+                                        <span class="form-checkbox__text">
+                                            King  
+                                        </span>
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="queen">
+                                    <p class="form-checkbox__inner">  
+                                        <span class="form-checkbox__box">
+                                        </span>
+                                        <span class="form-checkbox__text">
+                                            Queen  
+                                        </span>
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="robot">
+                                    <p class="form-checkbox__inner">  
+                                        <span class="form-checkbox__box">
+                                        </span>
+                                        <span class="form-checkbox__text">
+                                            Robot  
+                                        </span>
+                                    </p>
+                                </label>
+                            </div>
                         </div>
                     </details>
-                    <details class="form-catalog__box" open>
+                    <details class="filter-box" open>
                         <summary>Eyes</summary>
-                        <div class="form-control">
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="eyes" value="yellow">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box">
+                        <div class="filter-box__info">
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="yellow">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box">
+                                        </span>
+                                        <span class="form-radio__text">
+                                            Yellow
+                                        </span>
                                     </span>
-                                    <span class="form-radio__text">
-                                        Yellow
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" checked required value="green">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Green
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="eyes" checked required value="green">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Green
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="mix">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Mix
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="eyes" value="mix">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Mix
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="orange">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Orange
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="eyes" value="orange">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Orange
-                                    </span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                     </details>
-                    <details class="form-catalog__box">
+                    <details class="filter-box">
                         <summary>Fase</summary>
-                        <div class="form-control">
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="face" value="yellow">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box">
+                        <div class="filter-box__info">
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="yellow">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box">
+                                        </span>
+                                        <span class="form-radio__text">
+                                            Yellow
+                                        </span>
                                     </span>
-                                    <span class="form-radio__text">
-                                        Yellow
+                                </label>  
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="face" checked required value="green">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Green
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="face" checked required value="green">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Green
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="mix">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Mix
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="face" value="mix">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Mix
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="orange">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Orange
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="face" value="orange">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Orange
-                                    </span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                     </details>
-                    <details class="form-catalog__box">
+                    <details class="filter-box">
                         <summary>Skin</summary>
-                        <div class="form-control">
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="skin" value="yellow">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box">
+                        <div class="filter-box__info">
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="yellow">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box">
+                                        </span>
+                                        <span class="form-radio__text">
+                                            Yellow
+                                        </span>
                                     </span>
-                                    <span class="form-radio__text">
-                                        Yellow
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="skin" checked required value="green">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Green
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="skin" checked required value="green">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Green
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="mix">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Mix
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="skin" value="mix">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Mix
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="orange">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Orange
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="skin" value="orange">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Orange
-                                    </span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                     </details>
-                    <details class="form-catalog__box">
+                    <details class="filter-box">
                         <summary>Background</summary>
-                        <div class="form-control">
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="background" value="yellow">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box">
+                        <div class="filter-box__info">
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="yellow">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box">
+                                        </span>
+                                        <span class="form-radio__text">
+                                            Yellow
+                                        </span>
                                     </span>
-                                    <span class="form-radio__text">
-                                        Yellow
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="background" checked required value="green">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Green
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="background" checked required value="green">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Green
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="mix">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Mix
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="background" value="mix">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Mix
+                                </label>
+                            </div>
+                            <div>
+                                <label class="form-radio">
+                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="orange">
+                                    <span class="form-radio__inner">
+                                        <span class="form-radio__box"></span>
+                                        <span class="form-radio__text">
+                                            Orange
+                                        </span>
                                     </span>
-                                </span>
-                            </label>
-                            <label class="form-radio">
-                                <input class="input-hidden form-radio__input" type="radio" name="background" value="orange">
-                                <span class="form-radio__inner">
-                                    <span class="form-radio__box"></span>
-                                    <span class="form-radio__text">
-                                        Orange
-                                    </span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                     </details>
-                    <details class="form-catalog__box" open>
+                    <details class="filter-box" open>
                         <summary>Special</summary>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
+                        <div class="filter-box__info">
+                            <div>
+                               <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="yellow">
                                 <p class="form-checkbox__inner">  
                                     <span class="form-checkbox__box">
                                     </span>
@@ -332,11 +367,11 @@
                                         Yellow  
                                     </span>
                                 </p>
-                            </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
+                            </label> 
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="green">
                                 <p class="form-checkbox__inner">  
                                     <span class="form-checkbox__box">
                                     </span>
@@ -345,10 +380,10 @@
                                     </span>
                                 </p>
                             </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
+                            </div>
+                            <div>
+                                <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="mix">
                                 <p class="form-checkbox__inner">  
                                     <span class="form-checkbox__box">
                                     </span>
@@ -357,10 +392,10 @@
                                     </span>
                                 </p>
                             </label>
-                        </div>
-                        <div>
-                            <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input">
+                            </div>
+                            <div>
+                               <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="orange">
                                 <p class="form-checkbox__inner">  
                                     <span class="form-checkbox__box">
                                     </span>
@@ -368,39 +403,62 @@
                                         Orange  
                                     </span>
                                 </p>
-                            </label>
+                            </label> 
+                            </div>
                         </div>
                     </details>
-                    <button class="btn btn--primary" type="submit">Apply</button>
+                    <button class="btn btn--primary btn--full-width" type="submit">Apply</button>
                 </form>
             </aside>
-            <div class="product-card">
+            <div class="product-catalog">
                 <div class="header-catalog">
-                    <h2 class="header-catalog__title">
+                    <h2 class="section-title align-left m-0">
                         All item
                     </h2>
-                    <form class="catalog-list">
-                        <label for="sort">
-                            <select name="" id="sort" required>
-                                <option disabled value="" selected>Sort by</option>
-                                <option value="newest">Newest</option>
-                                <option value="popular">Most popular</option>
-                                <option value="price">Increasing in price</option>
-                                <option value="lowering the price">Lowering the price</option>
-                            </select>
-                        </label>
-                    </form>
-                    <form class="search">
-                        <button type="submit" class="search__btn">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span class="accessibility">
-                                Search
-                            </span>
-                        </button>
-                        <input type="search" class="search__input" placeholder="Search">
-                    </form>
+                    <div class="wrapper-form">
+                        <form class="catalog-list">
+                            <label for="sort">
+                                <select name="filter" id="sort" form="filter-form" required>
+                                    <option disabled value="" selected>Sort by</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="popular">Most popular</option>
+                                    <option value="increasing in price">Increasing in price</option>
+                                    <option value="lowering the price">Lowering the price</option>
+                                </select>
+                            </label>
+                        </form>
+                        <form class="search-catalog">
+                            <button type="submit" method="post" class="search__btn">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="accessibility">
+                                    Search NFT
+                                </span>
+                            </button>
+                            <input type="search" class="search__input" placeholder="Search NFT">
+                        </form>
+                    </div>
+                </div>
+                <div class="filters">
+                    <button class="filter-button">NFT 
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4.24329L4 12.2433M4 4.24329L12 12.2433" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter-button">ICO 
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4.24329L4 12.2433M4 4.24329L12 12.2433" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="filter-button">Crypto 
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4.24329L4 12.2433M4 4.24329L12 12.2433" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn--secondary btn--small" type="reset">
+                        Clear all
+                    </button>
                 </div>
                 <div class="list-catalog">
                     <article class="catalog__item">
