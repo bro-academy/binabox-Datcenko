@@ -42,8 +42,8 @@
                 </ul>
             </nav>
             <div class="tools">
-                <form class="search">
-                    <button type="submit" method="post" class="search__btn">
+                <form class="search" method="get">
+                    <button type="submit" class="search__btn">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -88,17 +88,17 @@
         </div>
         <div class="wrapper">
             <aside class="sidebar">
-                <form action="#" method="post" class="filter-form">
+                <form action="#" method="get" class="filter-form">
                     <details class="filter-box" open>
                         <summary>Clothing</summary>
                         <div class="filter-box__info">
                             <div>
                                 <label class="form-checkbox">
-                                    <input type="checkbox" name="" class="input-hidden form-checkbox__input" name="clothing" value="combatant">
-                                    <p class="form-checkbox__inner">  
-                                        <span class="form-checkbox__box">
+                                    <input type="checkbox" name="" class="input-hidden checkbox__input" name="clothing" value="combatant">
+                                    <p class="checkbox__inner">  
+                                        <span class="checkbox__box">
                                         </span>
-                                        <span class="form-checkbox__text">
+                                        <span class="checkbox__text">
                                             Combatant  
                                         </span>
                                     </p>
@@ -106,11 +106,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="ninja">
-                                    <p class="form-checkbox__inner">  
-                                        <span class="form-checkbox__box">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="clothing" value="ninja">
+                                    <p class="checkbox__inner">  
+                                        <span class="checkbox__box">
                                         </span>
-                                        <span class="form-checkbox__text">
+                                        <span class="checkbox__text">
                                             Ninja  
                                         </span>
                                     </p>
@@ -118,11 +118,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="king">
-                                    <p class="form-checkbox__inner">  
-                                        <span class="form-checkbox__box">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="clothing" value="king">
+                                    <p class="checkbox__inner">  
+                                        <span class="checkbox__box">
                                         </span>
-                                        <span class="form-checkbox__text">
+                                        <span class="checkbox__text">
                                             King  
                                         </span>
                                     </p>
@@ -130,11 +130,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="queen">
-                                    <p class="form-checkbox__inner">  
-                                        <span class="form-checkbox__box">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="clothing" value="queen">
+                                    <p class="checkbox__inner">  
+                                        <span class="checkbox__box">
                                         </span>
-                                        <span class="form-checkbox__text">
+                                        <span class="checkbox__text">
                                             Queen  
                                         </span>
                                     </p>
@@ -142,11 +142,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                    <input type="checkbox" class="input-hidden form-checkbox__input" name="clothing" value="robot">
-                                    <p class="form-checkbox__inner">  
-                                        <span class="form-checkbox__box">
+                                    <input type="checkbox" class="input-hidden checkbox__input" name="clothing" value="robot">
+                                    <p class="checkbox__inner">  
+                                        <span class="checkbox__box">
                                         </span>
-                                        <span class="form-checkbox__text">
+                                        <span class="checkbox__text">
                                             Robot  
                                         </span>
                                     </p>
@@ -159,11 +159,11 @@
                         <div class="filter-box__info">
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="yellow">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box">
+                                    <input class="input-hidden radio__input" type="radio" name="eyes" value="yellow">
+                                    <span class="radio__inner">
+                                        <span class="radio__box">
                                         </span>
-                                        <span class="form-radio__text">
+                                        <span class="radio__text">
                                             Yellow
                                         </span>
                                     </span>
@@ -171,10 +171,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" checked required value="green">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="eyes" checked required value="green">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Green
                                         </span>
                                     </span>
@@ -182,10 +182,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="mix">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="eyes" value="mix">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Mix
                                         </span>
                                     </span>
@@ -193,10 +193,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="eyes" value="orange">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="eyes" value="orange">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Orange
                                         </span>
                                     </span>
@@ -209,11 +209,11 @@
                         <div class="filter-box__info">
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="yellow">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box">
+                                    <input class="input-hidden radio__input" type="radio" name="face" value="yellow">
+                                    <span class="radio__inner">
+                                        <span class="radio__box">
                                         </span>
-                                        <span class="form-radio__text">
+                                        <span class="radio__text">
                                             Yellow
                                         </span>
                                     </span>
@@ -221,10 +221,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="face" checked required value="green">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="face" checked required value="green">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Green
                                         </span>
                                     </span>
@@ -232,10 +232,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="mix">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="face" value="mix">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Mix
                                         </span>
                                     </span>
@@ -243,10 +243,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="face" value="orange">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="face" value="orange">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Orange
                                         </span>
                                     </span>
@@ -259,11 +259,11 @@
                         <div class="filter-box__info">
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="yellow">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box">
+                                    <input class="input-hidden radio__input" type="radio" name="skin" value="yellow">
+                                    <span class="radio__inner">
+                                        <span class="radio__box">
                                         </span>
-                                        <span class="form-radio__text">
+                                        <span class="radio__text">
                                             Yellow
                                         </span>
                                     </span>
@@ -271,10 +271,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="skin" checked required value="green">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="skin" checked required value="green">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Green
                                         </span>
                                     </span>
@@ -282,10 +282,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="mix">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="skin" value="mix">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Mix
                                         </span>
                                     </span>
@@ -293,10 +293,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="skin" value="orange">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="skin" value="orange">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Orange
                                         </span>
                                     </span>
@@ -309,11 +309,11 @@
                         <div class="filter-box__info">
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="yellow">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box">
+                                    <input class="input-hidden radio__input" type="radio" name="background" value="yellow">
+                                    <span class="radio__inner">
+                                        <span class="radio__box">
                                         </span>
-                                        <span class="form-radio__text">
+                                        <span class="radio__text">
                                             Yellow
                                         </span>
                                     </span>
@@ -321,10 +321,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="background" checked required value="green">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="background" checked required value="green">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Green
                                         </span>
                                     </span>
@@ -332,10 +332,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="mix">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="background" value="mix">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Mix
                                         </span>
                                     </span>
@@ -343,10 +343,10 @@
                             </div>
                             <div>
                                 <label class="form-radio">
-                                    <input class="input-hidden form-radio__input" type="radio" name="background" value="orange">
-                                    <span class="form-radio__inner">
-                                        <span class="form-radio__box"></span>
-                                        <span class="form-radio__text">
+                                    <input class="input-hidden radio__input" type="radio" name="background" value="orange">
+                                    <span class="radio__inner">
+                                        <span class="radio__box"></span>
+                                        <span class="radio__text">
                                             Orange
                                         </span>
                                     </span>
@@ -359,11 +359,11 @@
                         <div class="filter-box__info">
                             <div>
                                <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="yellow">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
+                                <input type="checkbox" class="input-hidden checkbox__input" name="special" value="yellow">
+                                <p class="checkbox__inner">  
+                                    <span class="checkbox__box">
                                     </span>
-                                    <span class="form-checkbox__text">
+                                    <span class="checkbox__text">
                                         Yellow  
                                     </span>
                                 </p>
@@ -371,11 +371,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="green">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
+                                <input type="checkbox" class="input-hidden checkbox__input" name="special" value="green">
+                                <p class="checkbox__inner">  
+                                    <span class="checkbox__box">
                                     </span>
-                                    <span class="form-checkbox__text">
+                                    <span class="checkbox__text">
                                         Green  
                                     </span>
                                 </p>
@@ -383,11 +383,11 @@
                             </div>
                             <div>
                                 <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="mix">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
+                                <input type="checkbox" class="input-hidden checkbox__input" name="special" value="mix">
+                                <p class="checkbox__inner">  
+                                    <span class="checkbox__box">
                                     </span>
-                                    <span class="form-checkbox__text">
+                                    <span class="checkbox__text">
                                         Mix  
                                     </span>
                                 </p>
@@ -395,11 +395,11 @@
                             </div>
                             <div>
                                <label class="form-checkbox">
-                                <input type="checkbox" class="input-hidden form-checkbox__input" name="special" value="orange">
-                                <p class="form-checkbox__inner">  
-                                    <span class="form-checkbox__box">
+                                <input type="checkbox" class="input-hidden checkbox__input" name="special" value="orange">
+                                <p class="checkbox__inner">  
+                                    <span class="checkbox__box">
                                     </span>
-                                    <span class="form-checkbox__text">
+                                    <span class="checkbox__text">
                                         Orange  
                                     </span>
                                 </p>
@@ -416,7 +416,7 @@
                         All item
                     </h2>
                     <div class="wrapper-form">
-                        <form class="catalog-list">
+                        <form class="catalog-list" method="get">
                             <label for="sort">
                                 <select name="filter" id="sort" form="filter-form" required>
                                     <option disabled value="" selected>Sort by</option>
@@ -427,8 +427,8 @@
                                 </select>
                             </label>
                         </form>
-                        <form class="search-catalog">
-                            <button type="submit" method="post" class="search__btn">
+                        <form class="search-catalog" method="get">
+                            <button type="submit" class="search__btn">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
