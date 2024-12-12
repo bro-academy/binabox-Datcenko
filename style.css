@@ -43,6 +43,9 @@ svg {
     justify-content: space-between;
     gap: 16px;
 }
+main {
+    overflow: hidden;
+}
 .logo {
     font-size: 0;
     line-height: 0;
@@ -155,12 +158,28 @@ svg {
     display: inline-block;
     vertical-align: top;
 }
-.btn:hover {
-    opacity: 0.8;
+.btn:hover,
+.btn:active {
+    background-color: rgba(191, 197, 238, 0.12);
+}
+.btn:focus {
+    box-shadow: 0 0 0 4px #3892F3;
 }
 .btn--primary {
     background-color: #0265DC;
     border-color: #0265DC;
+}
+.btn--primary:hover {
+    background-color: #3892F3;
+    border-color:  #3892F3;
+}
+.btn--primary:focus {
+    background-color: #0265DC;
+    box-shadow: 0 0 0 4px #3892F3;
+}
+.btn--primary:active {
+    background-color: #0054B6;
+    border: none;
 }
 .btn--secondary {
     background-color: #FFF;
@@ -168,7 +187,13 @@ svg {
     border-color: #FFF;
 }
 .btn--secondary:hover {
-    opacity: 0.5;
+    background-color: #F4F7FA;
+}
+.btn--secondary:focus {
+    background-color: #FFF;
+}
+.btn--secondary:active {
+    background-color: rgba(229, 236, 251, 0.36);
 }
 .btn--small {
     font-size: 14px;
@@ -377,7 +402,7 @@ svg {
     background-image: url(img/about-shadow-botton.png);
     z-index: -1;
 }
-.catalog-card:hover .catalog-card__state {
+.catalog-card:hover .catalog-card__state { 
     visibility: visible;
     opacity: 1;
 }
@@ -509,14 +534,51 @@ svg {
     margin: 0 0 6px;
     color: #F5F8FB;
 }
+.blog__item,
+.team__item {
+    position: relative;
+}
 .blog__item p {
     margin-bottom: 16px;
 }
 .blog__button {
     display: flex;
 }
+.blog__item::before,
+.team__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 90px;
+    visibility: hidden;
+    z-index: 2;
+    transition: visibility 0.2s linear;
+    background-image: url(img/about-shadow-top.png);
+}
+.blog__item::after,
+.team__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 104px;
+    visibility: hidden;
+    z-index: 2;
+    background-image: url(img/about-shadow-botton.png);
+    transition: visibility 0.2s linear;
+}
+.blog__item:hover::after,
+.blog__item:hover::before,
+.team__item:hover::after,
+.team__item:hover::before {
+    visibility: visible;
+}
 .align-center {
     text-align: center;
+    margin: 64px auto;
 }
 .align-center .btn {
     display: inline-block;
@@ -629,6 +691,9 @@ svg {
     flex-direction: column; 
     align-items: center; 
     text-align: center;
+}
+.team__item:focus {
+    box-shadow: 0 0 0 4px #3892F3;
 }
 .team__item img {
     border-radius: 50%;
@@ -1157,6 +1222,9 @@ ul .pointer-list {
     gap: 10px;
     font-size: 14px;
 }
+.contact-form label {
+    cursor: pointer;
+}
 .form-switcher__text {
     margin: 0;
 }
@@ -1376,7 +1444,7 @@ ul .pointer-list {
     background-color: #2e2f3c;
     border-color: #2e2f3c;
 }
-.checkbox__input:invalid + .checkbox__inner .checkbox__box {
+.checkbox__input:user-invalid + .checkbox__inner .checkbox__box {
     border-color: #EA3829;
 }
 .checkbox__text {

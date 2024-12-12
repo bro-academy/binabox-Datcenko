@@ -128,11 +128,11 @@
                 Browse through the most freuently asked questions
             </p>
             <form action="#" method="post" class="contact-form">
-                <div class="form-switcher">
-                    <label for="switcher" class="form-switcher__text">Use my profile information</label>
-                    <input type="checkbox" class="form-switcher__input input-hidden" id="switcher">
+                <label class="form-switcher">
+                    <span class="form-switcher__text">Use my profile information</span>
+                    <input type="checkbox" class="form-switcher__input input-hidden">
                     <span class="form-switcher__box"></span>
-                </div>
+                </label>
                 <div class="form-control">
                     <label class="form-control__label" for="name">
                         Name
@@ -175,7 +175,7 @@
                     <label class="form-control__label" for="email">
                         Email
                     </label>
-                    <input type="email" id="email" class="form-control__input" required>
+                    <input type="email" id="email" class="form-control__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 </div>
                 <div class="form-control">
                     <label class="form-control__label" for="phone">
@@ -196,7 +196,7 @@
                         <span class="checkbox__box">
                         </span>
                         <span class="checkbox__text">
-                            By clicking on the ‘Send Message’ button I agree to <a target="_blank">all the terms of the security policy</a>
+                            By clicking on the ‘Send Message’ button I agree to <a href="#" target="_blank">all the terms of the security policy</a>
                         </span>
                     </p>
                 </label>
